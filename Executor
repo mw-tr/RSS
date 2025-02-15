@@ -424,7 +424,7 @@ UICorner_14.Parent = Scan
 
 -- Scripts:
 
-local function YKLFK_script() -- TextBox.SyntaxHighlighter 
+local function FPQHO_script() -- TextBox.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -474,8 +474,8 @@ local function YKLFK_script() -- TextBox.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(YKLFK_script)()
-local function RMFMLND_script() -- TextBox.LocalScript 
+coroutine.wrap(FPQHO_script)()
+local function RBKRD_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local ReplicatedStorage = game:GetService("TextChatService")
@@ -501,8 +501,8 @@ local function RMFMLND_script() -- TextBox.LocalScript
 	textButton.MouseButton1Click:Connect(onExecuteButtonClick)
 	
 end
-coroutine.wrap(RMFMLND_script)()
-local function ONJNUIL_script() -- TextBox_2.SyntaxHighlighter 
+coroutine.wrap(RBKRD_script)()
+local function DHIERUY_script() -- TextBox_2.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	local textBox = script.Parent
@@ -549,8 +549,8 @@ local function ONJNUIL_script() -- TextBox_2.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(ONJNUIL_script)()
-local function YDUCWO_script() -- Execute.LocalScript 
+coroutine.wrap(DHIERUY_script)()
+local function IIUS_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local replicatedStorage = game:GetService("ReplicatedStorage")
@@ -577,8 +577,8 @@ local function YDUCWO_script() -- Execute.LocalScript
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(YDUCWO_script)()
-local function WFQK_script() -- Clear.ClearTextBoxOnClick 
+coroutine.wrap(IIUS_script)()
+local function ELVQGC_script() -- Clear.ClearTextBoxOnClick 
 	local script = Instance.new('LocalScript', Clear)
 
 	local clearButton = script.Parent
@@ -592,8 +592,8 @@ local function WFQK_script() -- Clear.ClearTextBoxOnClick
 	
 	
 end
-coroutine.wrap(WFQK_script)()
-local function OBHRZZ_script() -- SSFRAME.UIDrag 
+coroutine.wrap(ELVQGC_script)()
+local function JMTOWA_script() -- SSFRAME.UIDrag 
 	local script = Instance.new('LocalScript', SSFRAME)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -634,8 +634,8 @@ local function OBHRZZ_script() -- SSFRAME.UIDrag
 		end
 	end)
 end
-coroutine.wrap(OBHRZZ_script)()
-local function UKFUMC_script() -- TextBox_3.SyntaxHighlighter 
+coroutine.wrap(JMTOWA_script)()
+local function PYFQMG_script() -- TextBox_3.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_3)
 
 	local textBox = script.Parent
@@ -682,21 +682,21 @@ local function UKFUMC_script() -- TextBox_3.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(UKFUMC_script)()
-local function GFEB_script() -- Inject.LocalScript 
+coroutine.wrap(PYFQMG_script)()
+local function EDNMO_script() -- Inject.LocalScript 
 	local script = Instance.new('LocalScript', Inject)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Check/refs/heads/main/Lol"))()
 	end)
 end
-coroutine.wrap(GFEB_script)()
-local function WTXJZFL_script() -- Scan.LocalScript 
+coroutine.wrap(EDNMO_script)()
+local function JGVIBKO_script() -- Scan.LocalScript 
 	local script = Instance.new('LocalScript', Scan)
 
 	script.Parent.MouseButton1Click:Connect(function()
-	for _, v in pairs(game:GetDescendants()) do
-		if v.name == 'Χ'  and v.Name == '݂' then
+	for _, v in pairs(game.TextChatService:GetDescendants()) do
+			if v.name == 'ChatInputBarEvent' then
 			local loadNotificationSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Notify/refs/heads/main/ModernNotification"))()
 			loadNotificationSystem.Show("Game is supported", "Asset is been loaded have fun!", 2)
 			break
@@ -708,8 +708,8 @@ local function WTXJZFL_script() -- Scan.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WTXJZFL_script)()
-local function TGDT_script() -- ScreenGui.ToggleFrameVisibility 
+coroutine.wrap(JGVIBKO_script)()
+local function NHELWG_script() -- ScreenGui.ToggleFrameVisibility 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -728,4 +728,4 @@ local function TGDT_script() -- ScreenGui.ToggleFrameVisibility
 	
 	
 end
-coroutine.wrap(TGDT_script)()
+coroutine.wrap(NHELWG_script)()
