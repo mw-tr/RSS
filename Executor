@@ -54,10 +54,11 @@ local Inject = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local Scan = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 SSFRAME.Name = "SSFRAME"
@@ -422,9 +423,23 @@ Scan.TextSize = 14.000
 UICorner_14.CornerRadius = UDim.new(0, 5)
 UICorner_14.Parent = Scan
 
+TextLabel_5.Parent = ScreenGui
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.445825547, 0, 0.896694243, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "RSS Roblox #1 Serverside"
+TextLabel_5.TextColor3 = Color3.fromRGB(197, 197, 197)
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextStrokeTransparency = 0.520
+TextLabel_5.TextTransparency = 0.390
+
 -- Scripts:
 
-local function PESL_script() -- TextBox.SyntaxHighlighter 
+local function HJWC_script() -- TextBox.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -445,7 +460,7 @@ local function PESL_script() -- TextBox.SyntaxHighlighter
 	local keywords = {
 		"and", "break", "do", "else", "elseif", "end", "false", "for", "function",
 		"if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true",
-		"until", "while", "require", "loadstring", "debug", "hookfunction", "hookmetamethod", "pcall", "xpcall", "getfenv", "setfenv",  "rawget",
+		"until", "while", "require", "loadstring", "debug", "hookfunction", "hookmetamethod", "pcall", "xpcall", "getfenv", "setfenv", "_g", "rawget",
 		"getgc", "getrawmetatable"
 	}
 	
@@ -474,8 +489,8 @@ local function PESL_script() -- TextBox.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(PESL_script)()
-local function ERJGO_script() -- TextBox.LocalScript 
+coroutine.wrap(HJWC_script)()
+local function HZLAIQ_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local ReplicatedStorage = game:GetService("TextChatService")
@@ -501,8 +516,8 @@ local function ERJGO_script() -- TextBox.LocalScript
 	textButton.MouseButton1Click:Connect(onExecuteButtonClick)
 	
 end
-coroutine.wrap(ERJGO_script)()
-local function CWSUWB_script() -- TextBox_2.SyntaxHighlighter 
+coroutine.wrap(HZLAIQ_script)()
+local function VJCKIEV_script() -- TextBox_2.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	local textBox = script.Parent
@@ -540,7 +555,7 @@ local function CWSUWB_script() -- TextBox_2.SyntaxHighlighter
 		end
 	
 		-- Restore numbers with yellow highlight
-	--	tempText = tempText:gsub("NUM_PLACEHOLDER_(%d+)", '<font color="#55aa7f">%1</font>')
+		tempText = tempText:gsub("NUM_PLACEHOLDER_(%d+)", '<font color="#ffffff">%1</font>')
 	
 		highlightLabel.Text = tempText
 	end
@@ -549,8 +564,8 @@ local function CWSUWB_script() -- TextBox_2.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(CWSUWB_script)()
-local function HMWE_script() -- Execute.LocalScript 
+coroutine.wrap(VJCKIEV_script)()
+local function MMYC_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local replicatedStorage = game:GetService("ReplicatedStorage")
@@ -577,8 +592,8 @@ local function HMWE_script() -- Execute.LocalScript
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(HMWE_script)()
-local function ASQKS_script() -- Clear.ClearTextBoxOnClick 
+coroutine.wrap(MMYC_script)()
+local function POHHK_script() -- Clear.ClearTextBoxOnClick 
 	local script = Instance.new('LocalScript', Clear)
 
 	local clearButton = script.Parent
@@ -592,8 +607,8 @@ local function ASQKS_script() -- Clear.ClearTextBoxOnClick
 	
 	
 end
-coroutine.wrap(ASQKS_script)()
-local function BLCZBFG_script() -- SSFRAME.UIDrag 
+coroutine.wrap(POHHK_script)()
+local function YHWTR_script() -- SSFRAME.UIDrag 
 	local script = Instance.new('LocalScript', SSFRAME)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -634,8 +649,8 @@ local function BLCZBFG_script() -- SSFRAME.UIDrag
 		end
 	end)
 end
-coroutine.wrap(BLCZBFG_script)()
-local function NSQB_script() -- TextBox_3.SyntaxHighlighter 
+coroutine.wrap(YHWTR_script)()
+local function GUTAB_script() -- TextBox_3.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_3)
 
 	local textBox = script.Parent
@@ -673,7 +688,7 @@ local function NSQB_script() -- TextBox_3.SyntaxHighlighter
 		end
 	
 		-- Restore numbers with yellow highlight
-		tempText = tempText:gsub("NUM_PLACEHOLDER_(%d+)", '<font color="#55aa7f">%1</font>')
+		tempText = tempText:gsub("NUM_PLACEHOLDER_(%d+)", '<font color="#ffffff">%1</font>')
 	
 		highlightLabel.Text = tempText
 	end
@@ -682,16 +697,16 @@ local function NSQB_script() -- TextBox_3.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(NSQB_script)()
-local function VIKNXB_script() -- Inject.LocalScript 
+coroutine.wrap(GUTAB_script)()
+local function KRSN_script() -- Inject.LocalScript 
 	local script = Instance.new('LocalScript', Inject)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Check/refs/heads/main/Lol"))()
 	end)
 end
-coroutine.wrap(VIKNXB_script)()
-local function WUGRGXM_script() -- Scan.LocalScript 
+coroutine.wrap(KRSN_script)()
+local function IWFAS_script() -- Scan.LocalScript 
 	local script = Instance.new('LocalScript', Scan)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -724,8 +739,8 @@ local function WUGRGXM_script() -- Scan.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WUGRGXM_script)()
-local function FFMDEIV_script() -- ScreenGui.ToggleFrameVisibility 
+coroutine.wrap(IWFAS_script)()
+local function EXSOZ_script() -- ScreenGui.ToggleFrameVisibility 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -744,4 +759,4 @@ local function FFMDEIV_script() -- ScreenGui.ToggleFrameVisibility
 	
 	
 end
-coroutine.wrap(FFMDEIV_script)()
+coroutine.wrap(EXSOZ_script)()
