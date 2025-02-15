@@ -57,7 +57,7 @@ local UICorner_14 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 SSFRAME.Name = "SSFRAME"
@@ -424,7 +424,7 @@ UICorner_14.Parent = Scan
 
 -- Scripts:
 
-local function GDFJXHZ_script() -- TextBox.SyntaxHighlighter 
+local function VSGUNCR_script() -- TextBox.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -474,8 +474,8 @@ local function GDFJXHZ_script() -- TextBox.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(GDFJXHZ_script)()
-local function IDGG_script() -- TextBox.LocalScript 
+coroutine.wrap(VSGUNCR_script)()
+local function PSDRXGE_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local ReplicatedStorage = game:GetService("TextChatService")
@@ -501,8 +501,8 @@ local function IDGG_script() -- TextBox.LocalScript
 	textButton.MouseButton1Click:Connect(onExecuteButtonClick)
 	
 end
-coroutine.wrap(IDGG_script)()
-local function SYJWWT_script() -- TextBox_2.SyntaxHighlighter 
+coroutine.wrap(PSDRXGE_script)()
+local function PNFALIY_script() -- TextBox_2.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	local textBox = script.Parent
@@ -549,8 +549,8 @@ local function SYJWWT_script() -- TextBox_2.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(SYJWWT_script)()
-local function ADWER_script() -- Execute.LocalScript 
+coroutine.wrap(PNFALIY_script)()
+local function WIPTDZ_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local replicatedStorage = game:GetService("ReplicatedStorage")
@@ -577,8 +577,8 @@ local function ADWER_script() -- Execute.LocalScript
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(ADWER_script)()
-local function WODXCZE_script() -- Clear.ClearTextBoxOnClick 
+coroutine.wrap(WIPTDZ_script)()
+local function OHDQCCW_script() -- Clear.ClearTextBoxOnClick 
 	local script = Instance.new('LocalScript', Clear)
 
 	local clearButton = script.Parent
@@ -592,8 +592,8 @@ local function WODXCZE_script() -- Clear.ClearTextBoxOnClick
 	
 	
 end
-coroutine.wrap(WODXCZE_script)()
-local function VGOJCZZ_script() -- SSFRAME.UIDrag 
+coroutine.wrap(OHDQCCW_script)()
+local function CFBDSY_script() -- SSFRAME.UIDrag 
 	local script = Instance.new('LocalScript', SSFRAME)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -634,8 +634,8 @@ local function VGOJCZZ_script() -- SSFRAME.UIDrag
 		end
 	end)
 end
-coroutine.wrap(VGOJCZZ_script)()
-local function OMHLTOD_script() -- TextBox_3.SyntaxHighlighter 
+coroutine.wrap(CFBDSY_script)()
+local function DJVQ_script() -- TextBox_3.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_3)
 
 	local textBox = script.Parent
@@ -682,36 +682,50 @@ local function OMHLTOD_script() -- TextBox_3.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(OMHLTOD_script)()
-local function PEUH_script() -- Inject.LocalScript 
+coroutine.wrap(DJVQ_script)()
+local function MCWF_script() -- Inject.LocalScript 
 	local script = Instance.new('LocalScript', Inject)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Check/refs/heads/main/Lol"))()
 	end)
 end
-coroutine.wrap(PEUH_script)()
-local function AVXOALD_script() -- Scan.LocalScript 
+coroutine.wrap(MCWF_script)()
+local function DWVK_script() -- Scan.LocalScript 
 	local script = Instance.new('LocalScript', Scan)
 
 	script.Parent.MouseButton1Click:Connect(function()
-	for _, v in pairs(game.TextChatService:GetDescendants()) do
-			if v.name == 'ChatInputBarEvent' then
-				print(v.Name)
-			local loadNotificationSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Notify/refs/heads/main/ModernNotification"))()
-			loadNotificationSystem.Show("Game is supported", "Asset is been loaded have fun!", 2)
-			break
-			else
-			print('error a remoteevent is not a valid member')
-			local loadNotificationSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Notify/refs/heads/main/ModernNotification"))()
-			loadNotificationSystem.Show("Game is not supported", "missing descendant or infectors", 2)
-			break
+		local found = false 
+		for _, v in pairs(game.TextChatService:GetDescendants()) do
+			if v.Name == 'ChatInputBarEvent' then
+				found = true 
+				local success, loadNotificationSystem = pcall(function()
+					return loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Notify/refs/heads/main/ModernNotification"))()
+				end)
+				if success and loadNotificationSystem then
+					loadNotificationSystem.Show("Game is supported", "Asset is being loaded. Have fun!", 2)
+				else
+					return
+				end
+				break
+			end
 		end
+	
+		if not found then
+			local success, loadNotificationSystem = pcall(function()
+				return loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Notify/refs/heads/main/ModernNotification"))()
+			end)
+	
+			if success and loadNotificationSystem then
+				loadNotificationSystem.Show("Game is not supported", "Missing descendant or invalid structure.", 2)
+			else
+				return
+			end
 		end
 	end)
 end
-coroutine.wrap(AVXOALD_script)()
-local function VOCPQ_script() -- ScreenGui.ToggleFrameVisibility 
+coroutine.wrap(DWVK_script)()
+local function BXRWEF_script() -- ScreenGui.ToggleFrameVisibility 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -730,4 +744,4 @@ local function VOCPQ_script() -- ScreenGui.ToggleFrameVisibility
 	
 	
 end
-coroutine.wrap(VOCPQ_script)()
+coroutine.wrap(BXRWEF_script)()
