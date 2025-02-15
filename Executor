@@ -1,0 +1,731 @@
+-- Monstrum's Gui to Lua\n-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local SSFRAME = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local FrameV = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local TextBox = Instance.new("TextBox")
+local Frame = Instance.new("Frame")
+local SideFrame = Instance.new("Frame")
+local Folder = Instance.new("Folder")
+local TextLabel = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local CMDFRAME = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local TextBox_2 = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local Frame_2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local Execute = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local CMDFRAME_2 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+local CMDFRAME_3 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local UIGradient_7 = Instance.new("UIGradient")
+local TextBox_3 = Instance.new("TextBox")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
+local Frame_4 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Frame_5 = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local UIGradient_9 = Instance.new("UIGradient")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local Inject = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Scan = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SSFRAME.Name = "SSFRAME"
+SSFRAME.Parent = ScreenGui
+SSFRAME.BackgroundColor3 = Color3.fromRGB(59, 58, 58)
+SSFRAME.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SSFRAME.BorderSizePixel = 0
+SSFRAME.Position = UDim2.new(0.034337014, 0, 0.0873983726, 0)
+SSFRAME.Size = UDim2.new(0, 533, 0, 293)
+
+UICorner.Parent = SSFRAME
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
+UIGradient.Offset = Vector2.new(0.5, 0.899999976)
+UIGradient.Rotation = 90.89900207519531
+UIGradient.Parent = SSFRAME
+
+FrameV.Name = "FrameV"
+FrameV.Parent = SSFRAME
+FrameV.BackgroundColor3 = Color3.fromRGB(30, 31, 31)
+FrameV.BackgroundTransparency = 0.250
+FrameV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameV.BorderSizePixel = 0
+FrameV.Position = UDim2.new(0.0245021228, -3, 0.0664280429, 6)
+FrameV.Size = UDim2.new(0, 431, 0, 195)
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = FrameV
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
+UIGradient_2.Offset = Vector2.new(0.5, 0.899999976)
+UIGradient_2.Rotation = 90.89900207519531
+UIGradient_2.Parent = FrameV
+
+TextBox.Parent = FrameV
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0487238988, 0, 0.0360359773, -5)
+TextBox.Size = UDim2.new(0, 410, 0, 192)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.Code
+TextBox.MultiLine = true
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 15.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+Frame.Parent = TextBox
+Frame.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Frame.BackgroundTransparency = 0.600
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-0.0021390589, 0, -0.0182647705, 0)
+Frame.Size = UDim2.new(0, 1, 0, 196)
+
+SideFrame.Name = "SideFrame"
+SideFrame.Parent = Frame
+SideFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SideFrame.BackgroundTransparency = 1.000
+SideFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SideFrame.BorderSizePixel = 0
+SideFrame.Position = UDim2.new(-18, 0, 0, 0)
+SideFrame.Size = UDim2.new(0, 18, 0, 222)
+
+Folder.Parent = SideFrame
+
+TextLabel.Parent = Folder
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.0512195118, 0, -0.01369863, 0)
+TextLabel.Size = UDim2.new(0, 19, 0, 25)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "1"
+TextLabel.TextColor3 = Color3.fromRGB(204, 204, 204)
+TextLabel.TextSize = 13.000
+
+UIListLayout.Parent = Folder
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+CMDFRAME.Name = "CMDFRAME"
+CMDFRAME.Parent = TextBox
+CMDFRAME.BackgroundColor3 = Color3.fromRGB(30, 31, 31)
+CMDFRAME.BackgroundTransparency = 0.250
+CMDFRAME.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CMDFRAME.BorderSizePixel = 0
+CMDFRAME.Position = UDim2.new(-0.070939526, 7, 0.891681075, 30)
+CMDFRAME.Size = UDim2.new(0, 432, 0, 18)
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = CMDFRAME
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
+UIGradient_3.Offset = Vector2.new(0.5, 0.899999976)
+UIGradient_3.Rotation = 90.89900207519531
+UIGradient_3.Parent = CMDFRAME
+
+TextBox_2.Parent = CMDFRAME
+TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.BackgroundTransparency = 1.000
+TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(0.00234194146, 0, 0, 0)
+TextBox_2.Size = UDim2.new(0, 430, 0, 18)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox_2.PlaceholderText = "_>"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(178, 178, 178)
+TextBox_2.TextSize = 14.000
+TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton.Parent = CMDFRAME
+TextButton.BackgroundColor3 = Color3.fromRGB(95, 98, 98)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.881944418, 0, -0.055560641, 0)
+TextButton.Size = UDim2.new(0, 51, 0, 19)
+TextButton.Font = Enum.Font.Code
+TextButton.Text = "Execute"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextStrokeTransparency = 0.840
+TextButton.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = TextButton
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
+UIGradient_4.Offset = Vector2.new(0.5, 0.899999976)
+UIGradient_4.Rotation = 90.89900207519531
+UIGradient_4.Parent = TextButton
+
+Frame_2.Parent = SSFRAME
+Frame_2.BackgroundColor3 = Color3.fromRGB(30, 31, 31)
+Frame_2.BackgroundTransparency = 0.250
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.825683355, 6, 0.0664280206, 6)
+Frame_2.Size = UDim2.new(0, 78, 0, 222)
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Frame_2
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
+UIGradient_5.Offset = Vector2.new(0.5, 0.899999976)
+UIGradient_5.Rotation = 90.89900207519531
+UIGradient_5.Parent = Frame_2
+
+TextLabel_2.Parent = SSFRAME
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.Position = UDim2.new(0, -3, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 549, 0, 25)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "Executor"
+TextLabel_2.TextColor3 = Color3.fromRGB(194, 194, 194)
+TextLabel_2.TextSize = 14.000
+
+Frame_3.Parent = TextLabel_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0, 3, 0.720000029, 2)
+Frame_3.Size = UDim2.new(0, 533, 0, 1)
+
+Execute.Name = "Execute"
+Execute.Parent = SSFRAME
+Execute.BackgroundColor3 = Color3.fromRGB(72, 70, 70)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0236794166, -3, 0.870307148, 0)
+Execute.Size = UDim2.new(0, 95, 0, 30)
+Execute.Font = Enum.Font.Code
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(226, 226, 226)
+Execute.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = Execute
+
+Clear.Name = "Clear"
+Clear.Parent = SSFRAME
+Clear.BackgroundColor3 = Color3.fromRGB(72, 70, 70)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.213114753, -3, 0.870307148, 0)
+Clear.Size = UDim2.new(0, 95, 0, 30)
+Clear.Font = Enum.Font.Code
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(226, 226, 226)
+Clear.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = Clear
+
+CMDFRAME_2.Name = "CMDFRAME"
+CMDFRAME_2.Parent = SSFRAME
+CMDFRAME_2.BackgroundColor3 = Color3.fromRGB(59, 58, 58)
+CMDFRAME_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CMDFRAME_2.BorderSizePixel = 0
+CMDFRAME_2.Position = UDim2.new(1.01313317, 0, 0, 0)
+CMDFRAME_2.Size = UDim2.new(0, 153, 0, 293)
+
+UICorner_8.Parent = CMDFRAME_2
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
+UIGradient_6.Offset = Vector2.new(0.5, 0.899999976)
+UIGradient_6.Rotation = 90.89900207519531
+UIGradient_6.Parent = CMDFRAME_2
+
+CMDFRAME_3.Name = "CMDFRAME"
+CMDFRAME_3.Parent = CMDFRAME_2
+CMDFRAME_3.BackgroundColor3 = Color3.fromRGB(30, 31, 31)
+CMDFRAME_3.BackgroundTransparency = 0.250
+CMDFRAME_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CMDFRAME_3.BorderSizePixel = 0
+CMDFRAME_3.Position = UDim2.new(-0.00653594779, 10, 0.888268054, 0)
+CMDFRAME_3.Size = UDim2.new(0, 136, 0, 18)
+
+UICorner_9.CornerRadius = UDim.new(0, 5)
+UICorner_9.Parent = CMDFRAME_3
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
+UIGradient_7.Offset = Vector2.new(0.5, 0.899999976)
+UIGradient_7.Rotation = 90.89900207519531
+UIGradient_7.Parent = CMDFRAME_3
+
+TextBox_3.Parent = CMDFRAME_3
+TextBox_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_3.BackgroundTransparency = 1.000
+TextBox_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_3.BorderSizePixel = 0
+TextBox_3.Position = UDim2.new(0.00234177522, 0, 0, 0)
+TextBox_3.Size = UDim2.new(0, 97, 0, 18)
+TextBox_3.Font = Enum.Font.SourceSans
+TextBox_3.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox_3.PlaceholderText = "_>"
+TextBox_3.Text = ""
+TextBox_3.TextColor3 = Color3.fromRGB(178, 178, 178)
+TextBox_3.TextSize = 14.000
+TextBox_3.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_2.Parent = TextBox_3
+TextButton_2.BackgroundColor3 = Color3.fromRGB(95, 98, 98)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.881944418, 0, -0.055560641, 0)
+TextButton_2.Size = UDim2.new(0, 51, 0, 19)
+TextButton_2.Font = Enum.Font.Code
+TextButton_2.Text = "Execute"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextStrokeTransparency = 0.840
+TextButton_2.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 5)
+UICorner_10.Parent = TextButton_2
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
+UIGradient_8.Offset = Vector2.new(0.5, 0.899999976)
+UIGradient_8.Rotation = 90.89900207519531
+UIGradient_8.Parent = TextButton_2
+
+Frame_4.Parent = CMDFRAME_2
+Frame_4.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(-0.0196078438, 3, 0.10566555, -11)
+Frame_4.Size = UDim2.new(0, 153, 0, 1)
+
+TextLabel_3.Parent = Frame_4
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.Position = UDim2.new(0, 0, 0, -19)
+TextLabel_3.Size = UDim2.new(0, 153, 0, 19)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "Commands"
+TextLabel_3.TextColor3 = Color3.fromRGB(194, 194, 194)
+TextLabel_3.TextSize = 14.000
+
+Frame_5.Parent = Frame_4
+Frame_5.BackgroundColor3 = Color3.fromRGB(30, 31, 31)
+Frame_5.BackgroundTransparency = 0.250
+Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0.0152260773, 6, -0.933586121, 6)
+Frame_5.Size = UDim2.new(0, 136, 0, 229)
+
+UICorner_11.CornerRadius = UDim.new(0, 5)
+UICorner_11.Parent = Frame_5
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
+UIGradient_9.Offset = Vector2.new(0.5, 0.899999976)
+UIGradient_9.Rotation = 90.89900207519531
+UIGradient_9.Parent = Frame_5
+
+ScrollingFrame.Parent = Frame_5
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 4.57763672e-05, 0)
+ScrollingFrame.Size = UDim2.new(0, 135, 0, 227)
+ScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+
+UIListLayout_2.Parent = ScrollingFrame
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+TextLabel_4.Parent = ScrollingFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 0.950
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0, 0, -6.72193323e-08, 0)
+TextLabel_4.Size = UDim2.new(0, 136, 0, 17)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "alpha"
+TextLabel_4.TextColor3 = Color3.fromRGB(226, 226, 226)
+TextLabel_4.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(0, 5)
+UICorner_12.Parent = TextLabel_4
+
+Inject.Name = "Inject"
+Inject.Parent = SSFRAME
+Inject.BackgroundColor3 = Color3.fromRGB(72, 70, 70)
+Inject.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Inject.BorderSizePixel = 0
+Inject.Position = UDim2.new(0.809737623, -3, 0.870307148, 0)
+Inject.Size = UDim2.new(0, 95, 0, 30)
+Inject.Font = Enum.Font.Code
+Inject.Text = "Inject"
+Inject.TextColor3 = Color3.fromRGB(226, 226, 226)
+Inject.TextSize = 14.000
+
+UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = Inject
+
+Scan.Name = "Scan"
+Scan.Parent = SSFRAME
+Scan.BackgroundColor3 = Color3.fromRGB(72, 70, 70)
+Scan.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scan.BorderSizePixel = 0
+Scan.Position = UDim2.new(0.620244205, -3, 0.870307148, 0)
+Scan.Size = UDim2.new(0, 95, 0, 30)
+Scan.Font = Enum.Font.Code
+Scan.Text = "Scan"
+Scan.TextColor3 = Color3.fromRGB(226, 226, 226)
+Scan.TextSize = 14.000
+
+UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_14.Parent = Scan
+
+-- Scripts:
+
+local function YKLFK_script() -- TextBox.SyntaxHighlighter 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local textBox = script.Parent
+	local highlightLabel = Instance.new("TextLabel", textBox.Parent)
+	highlightLabel.Position = textBox.Position
+	highlightLabel.Size = textBox.Size
+	highlightLabel.Name = "highlightLabel"
+	highlightLabel.Font = textBox.Font
+	highlightLabel.TextSize = textBox.TextSize
+	highlightLabel.BackgroundTransparency = 1
+	highlightLabel.TextXAlignment = textBox.TextXAlignment
+	highlightLabel.TextYAlignment = textBox.TextYAlignment
+	highlightLabel.TextWrapped = true
+	highlightLabel.TextScaled = textBox.TextScaled
+	highlightLabel.RichText = true
+	highlightLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- Set text color to white
+	
+	local keywords = {
+		"and", "break", "do", "else", "elseif", "end", "false", "for", "function",
+		"if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true",
+		"until", "while", "require", "loadstring", "debug", "hookfunction", "hookmetamethod", "pcall", "xpcall", "getfenv", "setfenv",  "rawget",
+		"getgc", "getrawmetatable"
+	}
+	
+	local function highlightSyntax()
+		local text = textBox.Text
+	
+		-- Replace numbers with placeholders
+		local tempText = text:gsub("(%d+)", "NUM_PLACEHOLDER_%1")
+	
+		tempText = tempText:gsub('"(.-)"', '<font color="#426ccc">"%1"</font>')
+		tempText = tempText:gsub("'(.-)'", '<font color="#426ccc">\'%1\'</font>')
+		tempText = tempText:gsub("(%-%-.-)\n", '<font color="#808080">%1</font>\n')
+		tempText = tempText:gsub("(%-%-%[%[.-%]%])", '<font color="#808080">%1</font>')
+	
+		for _, keyword in pairs(keywords) do
+			tempText = tempText:gsub("%f[%a]" .. keyword .. "%f[%A]", "<font color='#426ccc'>" .. keyword .. "</font>")
+		end
+	
+		-- Restore numbers with yellow highlight
+		tempText = tempText:gsub("NUM_PLACEHOLDER_(%d+)", '<font color="#55aa7f">%1</font>')
+	
+		highlightLabel.Text = tempText
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(highlightSyntax)
+	highlightSyntax()
+	
+end
+coroutine.wrap(YKLFK_script)()
+local function RMFMLND_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local ReplicatedStorage = game:GetService("TextChatService")
+	local executeScriptEvent = ReplicatedStorage:WaitForChild('ChatInputBarEvent')
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	local textBox = script.Parent
+	local textButton = script.Parent.Parent.Parent.Execute
+	
+	local function onExecuteButtonClick()
+		local scriptCode = textBox.Text
+		executeScriptEvent:FireServer(scriptCode)
+	end
+	
+	textButton.MouseButton1Click:Connect(onExecuteButtonClick)
+	
+end
+coroutine.wrap(RMFMLND_script)()
+local function ONJNUIL_script() -- TextBox_2.SyntaxHighlighter 
+	local script = Instance.new('LocalScript', TextBox_2)
+
+	local textBox = script.Parent
+	local highlightLabel = Instance.new("TextLabel", textBox.Parent)
+	highlightLabel.Position = textBox.Position
+	highlightLabel.Size = textBox.Size
+	highlightLabel.Name = "highlightLabel"
+	highlightLabel.Font = textBox.Font
+	highlightLabel.TextSize = textBox.TextSize
+	highlightLabel.BackgroundTransparency = 1
+	highlightLabel.TextXAlignment = textBox.TextXAlignment
+	highlightLabel.TextYAlignment = textBox.TextYAlignment
+	highlightLabel.TextWrapped = true
+	highlightLabel.TextScaled = textBox.TextScaled
+	highlightLabel.RichText = true
+	highlightLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- Set text color to white
+	
+	local keywords = {
+		"bring", "kill", "btools"
+	}
+	
+	local function highlightSyntax()
+		local text = textBox.Text
+	
+		-- Replace numbers with placeholders
+		local tempText = text:gsub("(%d+)", "NUM_PLACEHOLDER_%1")
+	
+		tempText = tempText:gsub('"(.-)"', '<font color="#426ccc">"%1"</font>')
+		tempText = tempText:gsub("'(.-)'", '<font color="#426ccc">\'%1\'</font>')
+		tempText = tempText:gsub("(%-%-.-)\n", '<font color="#808080">%1</font>\n')
+		tempText = tempText:gsub("(%-%-%[%[.-%]%])", '<font color="#808080">%1</font>')
+	
+		for _, keyword in pairs(keywords) do
+			tempText = tempText:gsub("%f[%a]" .. keyword .. "%f[%A]", "<font color='#426ccc'>" .. keyword .. "</font>")
+		end
+	
+		-- Restore numbers with yellow highlight
+	--	tempText = tempText:gsub("NUM_PLACEHOLDER_(%d+)", '<font color="#55aa7f">%1</font>')
+	
+		highlightLabel.Text = tempText
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(highlightSyntax)
+	highlightSyntax()
+	
+end
+coroutine.wrap(ONJNUIL_script)()
+local function YDUCWO_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local replicatedStorage = game:GetService("ReplicatedStorage")
+	local executeCodeEvent = replicatedStorage:WaitForChild("ExecuteCodeEvent")
+	
+	local button = script.Parent
+	local textBox = button.Parent.Parent.SSFRAME.FrameV.TextBox
+	local debounce = false
+	
+	local function onButtonClick()
+		if debounce then return end
+		debounce = true
+	
+		local sourceCode = textBox.Text
+		executeCodeEvent:FireServer(sourceCode)
+	
+		-- Debounce timer using coroutine to ensure single execution and reset
+		coroutine.wrap(function()
+			wait(1)
+			debounce = false
+		end)()
+	end
+	
+	button.MouseButton1Click:Connect(onButtonClick)
+	
+end
+coroutine.wrap(YDUCWO_script)()
+local function WFQK_script() -- Clear.ClearTextBoxOnClick 
+	local script = Instance.new('LocalScript', Clear)
+
+	local clearButton = script.Parent
+	local textBox = clearButton.Parent.FrameV:FindFirstChild('TextBox')
+	
+	clearButton.Activated:Connect(function()
+	    if textBox then
+	        textBox.Text = ""
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(WFQK_script)()
+local function OBHRZZ_script() -- SSFRAME.UIDrag 
+	local script = Instance.new('LocalScript', SSFRAME)
+
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(OBHRZZ_script)()
+local function UKFUMC_script() -- TextBox_3.SyntaxHighlighter 
+	local script = Instance.new('LocalScript', TextBox_3)
+
+	local textBox = script.Parent
+	local highlightLabel = Instance.new("TextLabel", textBox.Parent)
+	highlightLabel.Position = textBox.Position
+	highlightLabel.Size = textBox.Size
+	highlightLabel.Name = "highlightLabel"
+	highlightLabel.Font = textBox.Font
+	highlightLabel.TextSize = textBox.TextSize
+	highlightLabel.BackgroundTransparency = 1
+	highlightLabel.TextXAlignment = textBox.TextXAlignment
+	highlightLabel.TextYAlignment = textBox.TextYAlignment
+	highlightLabel.TextWrapped = true
+	highlightLabel.TextScaled = textBox.TextScaled
+	highlightLabel.RichText = true
+	highlightLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- Set text color to white
+	
+	local keywords = {
+		"bring", "btools", "kill"
+	}
+	
+	local function highlightSyntax()
+		local text = textBox.Text
+	
+		-- Replace numbers with placeholders
+		local tempText = text:gsub("(%d+)", "NUM_PLACEHOLDER_%1")
+	
+		tempText = tempText:gsub('"(.-)"', '<font color="#426ccc">"%1"</font>')
+		tempText = tempText:gsub("'(.-)'", '<font color="#426ccc">\'%1\'</font>')
+		tempText = tempText:gsub("(%-%-.-)\n", '<font color="#808080">%1</font>\n')
+		tempText = tempText:gsub("(%-%-%[%[.-%]%])", '<font color="#808080">%1</font>')
+	
+		for _, keyword in pairs(keywords) do
+			tempText = tempText:gsub("%f[%a]" .. keyword .. "%f[%A]", "<font color='#426ccc'>" .. keyword .. "</font>")
+		end
+	
+		-- Restore numbers with yellow highlight
+		tempText = tempText:gsub("NUM_PLACEHOLDER_(%d+)", '<font color="#55aa7f">%1</font>')
+	
+		highlightLabel.Text = tempText
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(highlightSyntax)
+	highlightSyntax()
+	
+end
+coroutine.wrap(UKFUMC_script)()
+local function GFEB_script() -- Inject.LocalScript 
+	local script = Instance.new('LocalScript', Inject)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Check/refs/heads/main/Lol"))()
+	end)
+end
+coroutine.wrap(GFEB_script)()
+local function WTXJZFL_script() -- Scan.LocalScript 
+	local script = Instance.new('LocalScript', Scan)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	for _, v in pairs(game:GetDescendants()) do
+		if v.name == 'Χ'  and v.Name == '݂' then
+			local loadNotificationSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Notify/refs/heads/main/ModernNotification"))()
+			loadNotificationSystem.Show("Game is supported", "Asset is been loaded have fun!", 2)
+			break
+		else
+			local loadNotificationSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Notify/refs/heads/main/ModernNotification"))()
+			loadNotificationSystem.Show("Game is not supported", "missing descendant or infectors", 2)
+			break
+		end
+		end
+	end)
+end
+coroutine.wrap(WTXJZFL_script)()
+local function TGDT_script() -- ScreenGui.ToggleFrameVisibility 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local UserInputService = game:GetService("UserInputService")
+	local frame = script.Parent:FindFirstChild("SSFRAME")
+	
+	local isVisible = false
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	    if not gameProcessed then
+	        if input.KeyCode == Enum.KeyCode.Delete then
+	            isVisible = not isVisible
+	            frame.Visible = isVisible
+	        end
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(TGDT_script)()
