@@ -25,33 +25,39 @@ local UIGradient_4 = Instance.new("UIGradient")
 local Frame_2 = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
 local UIGradient_5 = Instance.new("UIGradient")
+local Folder_2 = Instance.new("Folder")
+local gk = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local R6 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
 local TextLabel_2 = Instance.new("TextLabel")
 local Frame_3 = Instance.new("Frame")
 local Execute = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local Clear = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local CMDFRAME_2 = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local CMDFRAME_2 = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
 local UIGradient_6 = Instance.new("UIGradient")
 local CMDFRAME_3 = Instance.new("Frame")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
 local TextBox_3 = Instance.new("TextBox")
 local TextButton_2 = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local UIGradient_8 = Instance.new("UIGradient")
 local Frame_4 = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
 local Frame_5 = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayout_2 = Instance.new("UIListLayout")
+local UIListLayout_3 = Instance.new("UIListLayout")
 local TextLabel_4 = Instance.new("TextLabel")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local Scan = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
 
 --Properties:
@@ -212,6 +218,41 @@ UIGradient_5.Offset = Vector2.new(0.5, 0.899999976)
 UIGradient_5.Rotation = 90.89900207519531
 UIGradient_5.Parent = Frame_2
 
+Folder_2.Parent = Frame_2
+
+gk.Name = "gk"
+gk.Parent = Folder_2
+gk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gk.BackgroundTransparency = 1.000
+gk.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gk.BorderSizePixel = 0
+gk.Size = UDim2.new(0, 77, 0, 16)
+gk.Font = Enum.Font.SourceSans
+gk.Text = "GrabKnifeV4.lua"
+gk.TextColor3 = Color3.fromRGB(212, 212, 212)
+gk.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = gk
+
+R6.Name = "R6"
+R6.Parent = Folder_2
+R6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R6.BackgroundTransparency = 1.000
+R6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+R6.BorderSizePixel = 0
+R6.Size = UDim2.new(0, 77, 0, 16)
+R6.Font = Enum.Font.SourceSans
+R6.Text = "R6.lua"
+R6.TextColor3 = Color3.fromRGB(212, 212, 212)
+R6.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = R6
+
+UIListLayout_2.Parent = Folder_2
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
 TextLabel_2.Parent = SSFRAME
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
@@ -242,8 +283,8 @@ Execute.Text = "Execute"
 Execute.TextColor3 = Color3.fromRGB(226, 226, 226)
 Execute.TextSize = 14.000
 
-UICorner_6.CornerRadius = UDim.new(0, 5)
-UICorner_6.Parent = Execute
+UICorner_8.CornerRadius = UDim.new(0, 5)
+UICorner_8.Parent = Execute
 
 Clear.Name = "Clear"
 Clear.Parent = SSFRAME
@@ -257,8 +298,8 @@ Clear.Text = "Clear"
 Clear.TextColor3 = Color3.fromRGB(226, 226, 226)
 Clear.TextSize = 14.000
 
-UICorner_7.CornerRadius = UDim.new(0, 5)
-UICorner_7.Parent = Clear
+UICorner_9.CornerRadius = UDim.new(0, 5)
+UICorner_9.Parent = Clear
 
 CMDFRAME_2.Name = "CMDFRAME"
 CMDFRAME_2.Parent = SSFRAME
@@ -268,7 +309,7 @@ CMDFRAME_2.BorderSizePixel = 0
 CMDFRAME_2.Position = UDim2.new(1.01313317, 0, 0, 0)
 CMDFRAME_2.Size = UDim2.new(0, 153, 0, 293)
 
-UICorner_8.Parent = CMDFRAME_2
+UICorner_10.Parent = CMDFRAME_2
 
 UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
 UIGradient_6.Offset = Vector2.new(0.5, 0.899999976)
@@ -284,8 +325,8 @@ CMDFRAME_3.BorderSizePixel = 0
 CMDFRAME_3.Position = UDim2.new(-0.00653594779, 10, 0.888268054, 0)
 CMDFRAME_3.Size = UDim2.new(0, 136, 0, 18)
 
-UICorner_9.CornerRadius = UDim.new(0, 5)
-UICorner_9.Parent = CMDFRAME_3
+UICorner_11.CornerRadius = UDim.new(0, 5)
+UICorner_11.Parent = CMDFRAME_3
 
 UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
 UIGradient_7.Offset = Vector2.new(0.5, 0.899999976)
@@ -321,8 +362,8 @@ TextButton_2.TextSize = 14.000
 TextButton_2.TextStrokeTransparency = 0.840
 TextButton_2.TextWrapped = true
 
-UICorner_10.CornerRadius = UDim.new(0, 5)
-UICorner_10.Parent = TextButton_2
+UICorner_12.CornerRadius = UDim.new(0, 5)
+UICorner_12.Parent = TextButton_2
 
 UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
 UIGradient_8.Offset = Vector2.new(0.5, 0.899999976)
@@ -355,8 +396,8 @@ Frame_5.BorderSizePixel = 0
 Frame_5.Position = UDim2.new(0.0152260773, 6, -0.933586121, 6)
 Frame_5.Size = UDim2.new(0, 136, 0, 229)
 
-UICorner_11.CornerRadius = UDim.new(0, 5)
-UICorner_11.Parent = Frame_5
+UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = Frame_5
 
 UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(188, 188, 188)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(59, 58, 58))}
 UIGradient_9.Offset = Vector2.new(0.5, 0.899999976)
@@ -373,8 +414,8 @@ ScrollingFrame.Position = UDim2.new(0, 0, 4.57763672e-05, 0)
 ScrollingFrame.Size = UDim2.new(0, 135, 0, 227)
 ScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 
-UIListLayout_2.Parent = ScrollingFrame
-UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Parent = ScrollingFrame
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
 
 TextLabel_4.Parent = ScrollingFrame
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -388,8 +429,8 @@ TextLabel_4.Text = "alpha"
 TextLabel_4.TextColor3 = Color3.fromRGB(226, 226, 226)
 TextLabel_4.TextSize = 14.000
 
-UICorner_12.CornerRadius = UDim.new(0, 5)
-UICorner_12.Parent = TextLabel_4
+UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_14.Parent = TextLabel_4
 
 Scan.Name = "Scan"
 Scan.Parent = SSFRAME
@@ -403,8 +444,8 @@ Scan.Text = "Scan"
 Scan.TextColor3 = Color3.fromRGB(226, 226, 226)
 Scan.TextSize = 14.000
 
-UICorner_13.CornerRadius = UDim.new(0, 5)
-UICorner_13.Parent = Scan
+UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = Scan
 
 TextLabel_5.Parent = ScreenGui
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -422,7 +463,7 @@ TextLabel_5.TextTransparency = 0.390
 
 -- Scripts:
 
-local function JTST_script() -- TextBox.SyntaxHighlighter 
+local function KFPKFHL_script() -- TextBox.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -472,8 +513,8 @@ local function JTST_script() -- TextBox.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(JTST_script)()
-local function OAPU_script() -- TextBox.LocalScript 
+coroutine.wrap(KFPKFHL_script)()
+local function BEAYQZ_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local ReplicatedStorage = game:GetService("TextChatService")
@@ -499,8 +540,8 @@ local function OAPU_script() -- TextBox.LocalScript
 	textButton.MouseButton1Click:Connect(onExecuteButtonClick)
 	
 end
-coroutine.wrap(OAPU_script)()
-local function JQSUL_script() -- TextBox_2.SyntaxHighlighter 
+coroutine.wrap(BEAYQZ_script)()
+local function KEEYQ_script() -- TextBox_2.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	local textBox = script.Parent
@@ -547,8 +588,36 @@ local function JQSUL_script() -- TextBox_2.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(JQSUL_script)()
-local function CJJRC_script() -- Execute.LocalScript 
+coroutine.wrap(KEEYQ_script)()
+local function HOQGQ_script() -- gk.LocalScript 
+	local script = Instance.new('LocalScript', gk)
+
+	local button = script.Parent
+	local textBox = button.Parent.Parent.Parent.FrameV:FindFirstChild('TextBox')
+	
+	local text = "require(18665717275).load('%Username%')" -- Fixed string formatting
+	
+	button.Activated:Connect(function()
+		textBox.Text = text
+	end)
+	
+end
+coroutine.wrap(HOQGQ_script)()
+local function GFNGHYQ_script() -- R6.LocalScript 
+	local script = Instance.new('LocalScript', R6)
+
+	local button = script.Parent
+	local textBox = button.Parent.Parent.Parent.FrameV:FindFirstChild('TextBox')
+	
+	local text = "require(3436957371):r6('%Username%')" -- Fixed string formatting
+	
+	button.Activated:Connect(function()
+		textBox.Text = text
+	end)
+	
+end
+coroutine.wrap(GFNGHYQ_script)()
+local function BWPKU_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local replicatedStorage = game:GetService("ReplicatedStorage")
@@ -575,8 +644,8 @@ local function CJJRC_script() -- Execute.LocalScript
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(CJJRC_script)()
-local function OAYWUTY_script() -- Clear.ClearTextBoxOnClick 
+coroutine.wrap(BWPKU_script)()
+local function MPHTWJ_script() -- Clear.ClearTextBoxOnClick 
 	local script = Instance.new('LocalScript', Clear)
 
 	local clearButton = script.Parent
@@ -590,8 +659,8 @@ local function OAYWUTY_script() -- Clear.ClearTextBoxOnClick
 	
 	
 end
-coroutine.wrap(OAYWUTY_script)()
-local function VYVTVHC_script() -- SSFRAME.UIDrag 
+coroutine.wrap(MPHTWJ_script)()
+local function FSMZKSR_script() -- SSFRAME.UIDrag 
 	local script = Instance.new('LocalScript', SSFRAME)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -632,8 +701,8 @@ local function VYVTVHC_script() -- SSFRAME.UIDrag
 		end
 	end)
 end
-coroutine.wrap(VYVTVHC_script)()
-local function XVFXHHA_script() -- TextBox_3.SyntaxHighlighter 
+coroutine.wrap(FSMZKSR_script)()
+local function THWBP_script() -- TextBox_3.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_3)
 
 	local textBox = script.Parent
@@ -680,8 +749,8 @@ local function XVFXHHA_script() -- TextBox_3.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(XVFXHHA_script)()
-local function PTMI_script() -- Scan.LocalScript 
+coroutine.wrap(THWBP_script)()
+local function CXBBR_script() -- Scan.LocalScript 
 	local script = Instance.new('LocalScript', Scan)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -714,8 +783,8 @@ local function PTMI_script() -- Scan.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PTMI_script)()
-local function WMTBBC_script() -- ScreenGui.ToggleFrameVisibility 
+coroutine.wrap(CXBBR_script)()
+local function EMWIPGM_script() -- ScreenGui.ToggleFrameVisibility 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -734,4 +803,4 @@ local function WMTBBC_script() -- ScreenGui.ToggleFrameVisibility
 	
 	
 end
-coroutine.wrap(WMTBBC_script)()
+coroutine.wrap(EMWIPGM_script)()
