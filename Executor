@@ -463,7 +463,7 @@ TextLabel_5.TextTransparency = 0.390
 
 -- Scripts:
 
-local function KFPKFHL_script() -- TextBox.SyntaxHighlighter 
+local function HLXENZ_script() -- TextBox.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -513,8 +513,8 @@ local function KFPKFHL_script() -- TextBox.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(KFPKFHL_script)()
-local function BEAYQZ_script() -- TextBox.LocalScript 
+coroutine.wrap(HLXENZ_script)()
+local function MQCPWFN_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local ReplicatedStorage = game:GetService("TextChatService")
@@ -540,8 +540,8 @@ local function BEAYQZ_script() -- TextBox.LocalScript
 	textButton.MouseButton1Click:Connect(onExecuteButtonClick)
 	
 end
-coroutine.wrap(BEAYQZ_script)()
-local function KEEYQ_script() -- TextBox_2.SyntaxHighlighter 
+coroutine.wrap(MQCPWFN_script)()
+local function SJWA_script() -- TextBox_2.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	local textBox = script.Parent
@@ -588,8 +588,8 @@ local function KEEYQ_script() -- TextBox_2.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(KEEYQ_script)()
-local function HOQGQ_script() -- gk.LocalScript 
+coroutine.wrap(SJWA_script)()
+local function LRFTT_script() -- gk.LocalScript 
 	local script = Instance.new('LocalScript', gk)
 
 	local button = script.Parent
@@ -602,8 +602,46 @@ local function HOQGQ_script() -- gk.LocalScript
 	end)
 	
 end
-coroutine.wrap(HOQGQ_script)()
-local function GFNGHYQ_script() -- R6.LocalScript 
+coroutine.wrap(LRFTT_script)()
+local function EDTCTB_script() -- gk.LocalScript 
+	local script = Instance.new('LocalScript', gk)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	
+	local uiStroke = Instance.new("UIStroke")
+	uiStroke.Thickness = 1
+	uiStroke.Color = Color3.fromRGB(66, 108, 204) 
+	uiStroke.Transparency = 1 
+	uiStroke.Parent = button
+	
+	local tweenInfo = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Quad, 
+		Enum.EasingDirection.Out 
+	)
+	
+	local hoverTween = TweenService:Create(uiStroke, tweenInfo, {
+		Transparency = 0.7,
+		Thickness = 3 
+	})
+	
+	local leaveTween = TweenService:Create(uiStroke, tweenInfo, {
+		Transparency = 1,
+		Thickness = 1 
+	})
+	
+	button.MouseEnter:Connect(function()
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		leaveTween:Play()
+	end)
+end
+coroutine.wrap(EDTCTB_script)()
+local function UEQG_script() -- R6.LocalScript 
 	local script = Instance.new('LocalScript', R6)
 
 	local button = script.Parent
@@ -616,8 +654,46 @@ local function GFNGHYQ_script() -- R6.LocalScript
 	end)
 	
 end
-coroutine.wrap(GFNGHYQ_script)()
-local function BWPKU_script() -- Execute.LocalScript 
+coroutine.wrap(UEQG_script)()
+local function AZEJRL_script() -- R6.LocalScript 
+	local script = Instance.new('LocalScript', R6)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	
+	local uiStroke = Instance.new("UIStroke")
+	uiStroke.Thickness = 1
+	uiStroke.Color = Color3.fromRGB(66, 108, 204) 
+	uiStroke.Transparency = 1 
+	uiStroke.Parent = button
+	
+	local tweenInfo = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Quad, 
+		Enum.EasingDirection.Out 
+	)
+	
+	local hoverTween = TweenService:Create(uiStroke, tweenInfo, {
+		Transparency = 0.7,
+		Thickness = 3 
+	})
+	
+	local leaveTween = TweenService:Create(uiStroke, tweenInfo, {
+		Transparency = 1,
+		Thickness = 1 
+	})
+	
+	button.MouseEnter:Connect(function()
+		hoverTween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		leaveTween:Play()
+	end)
+end
+coroutine.wrap(AZEJRL_script)()
+local function GTNQI_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local replicatedStorage = game:GetService("ReplicatedStorage")
@@ -644,8 +720,8 @@ local function BWPKU_script() -- Execute.LocalScript
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(BWPKU_script)()
-local function MPHTWJ_script() -- Clear.ClearTextBoxOnClick 
+coroutine.wrap(GTNQI_script)()
+local function HXVUOW_script() -- Clear.ClearTextBoxOnClick 
 	local script = Instance.new('LocalScript', Clear)
 
 	local clearButton = script.Parent
@@ -659,8 +735,8 @@ local function MPHTWJ_script() -- Clear.ClearTextBoxOnClick
 	
 	
 end
-coroutine.wrap(MPHTWJ_script)()
-local function FSMZKSR_script() -- SSFRAME.UIDrag 
+coroutine.wrap(HXVUOW_script)()
+local function SQXSOIH_script() -- SSFRAME.UIDrag 
 	local script = Instance.new('LocalScript', SSFRAME)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -701,8 +777,8 @@ local function FSMZKSR_script() -- SSFRAME.UIDrag
 		end
 	end)
 end
-coroutine.wrap(FSMZKSR_script)()
-local function THWBP_script() -- TextBox_3.SyntaxHighlighter 
+coroutine.wrap(SQXSOIH_script)()
+local function PLZDA_script() -- TextBox_3.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_3)
 
 	local textBox = script.Parent
@@ -749,8 +825,8 @@ local function THWBP_script() -- TextBox_3.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(THWBP_script)()
-local function CXBBR_script() -- Scan.LocalScript 
+coroutine.wrap(PLZDA_script)()
+local function YVRGQUZ_script() -- Scan.LocalScript 
 	local script = Instance.new('LocalScript', Scan)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -783,8 +859,8 @@ local function CXBBR_script() -- Scan.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CXBBR_script)()
-local function EMWIPGM_script() -- ScreenGui.ToggleFrameVisibility 
+coroutine.wrap(YVRGQUZ_script)()
+local function MZMMVFU_script() -- ScreenGui.ToggleFrameVisibility 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -803,4 +879,4 @@ local function EMWIPGM_script() -- ScreenGui.ToggleFrameVisibility
 	
 	
 end
-coroutine.wrap(EMWIPGM_script)()
+coroutine.wrap(MZMMVFU_script)()
