@@ -443,7 +443,7 @@ TextLabel_4.BorderSizePixel = 0
 TextLabel_4.Position = UDim2.new(0.445825547, 0, 0.896694243, 0)
 TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "RSS Roblox #1 Serverside"
+TextLabel_4.Text = "Astralys Roblox #1 Serverside"
 TextLabel_4.TextColor3 = Color3.fromRGB(197, 197, 197)
 TextLabel_4.TextSize = 14.000
 TextLabel_4.TextStrokeTransparency = 0.520
@@ -451,7 +451,7 @@ TextLabel_4.TextTransparency = 0.390
 
 -- Scripts:
 
-local function PZIXCRD_script() -- FrameV.LocalScript 
+local function AYXVX_script() -- FrameV.LocalScript 
 	local script = Instance.new('LocalScript', FrameV)
 
 	local textBox = script.Parent.TextBox 
@@ -496,8 +496,8 @@ local function PZIXCRD_script() -- FrameV.LocalScript
 	updateLineNumbers()
 	
 end
-coroutine.wrap(PZIXCRD_script)()
-local function RMYVL_script() -- TextBox.SyntaxHighlighter 
+coroutine.wrap(AYXVX_script)()
+local function TGOWI_script() -- TextBox.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -547,8 +547,8 @@ local function RMYVL_script() -- TextBox.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(RMYVL_script)()
-local function GBIF_script() -- TextBox.LocalScript 
+coroutine.wrap(TGOWI_script)()
+local function WZMWSR_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local ReplicatedStorage = game:GetService("TextChatService")
@@ -574,8 +574,8 @@ local function GBIF_script() -- TextBox.LocalScript
 	textButton.MouseButton1Click:Connect(onExecuteButtonClick)
 	
 end
-coroutine.wrap(GBIF_script)()
-local function FEHPYF_script() -- TextBox_2.SyntaxHighlighter 
+coroutine.wrap(WZMWSR_script)()
+local function RAZLOH_script() -- TextBox_2.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_2)
 
 	local textBox = script.Parent
@@ -622,8 +622,8 @@ local function FEHPYF_script() -- TextBox_2.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(FEHPYF_script)()
-local function EYTMYO_script() -- gk.LocalScript 
+coroutine.wrap(RAZLOH_script)()
+local function QYSOE_script() -- gk.LocalScript 
 	local script = Instance.new('LocalScript', gk)
 
 	local button = script.Parent
@@ -636,8 +636,8 @@ local function EYTMYO_script() -- gk.LocalScript
 	end)
 	
 end
-coroutine.wrap(EYTMYO_script)()
-local function GIRIQ_script() -- gk.LocalScript 
+coroutine.wrap(QYSOE_script)()
+local function BZOYA_script() -- gk.LocalScript 
 	local script = Instance.new('LocalScript', gk)
 
 	local TweenService = game:GetService("TweenService")
@@ -674,8 +674,8 @@ local function GIRIQ_script() -- gk.LocalScript
 		leaveTween:Play()
 	end)
 end
-coroutine.wrap(GIRIQ_script)()
-local function BEPNK_script() -- R6.LocalScript 
+coroutine.wrap(BZOYA_script)()
+local function VCTFZQ_script() -- R6.LocalScript 
 	local script = Instance.new('LocalScript', R6)
 
 	local button = script.Parent
@@ -688,8 +688,8 @@ local function BEPNK_script() -- R6.LocalScript
 	end)
 	
 end
-coroutine.wrap(BEPNK_script)()
-local function ZYQEQSG_script() -- R6.LocalScript 
+coroutine.wrap(VCTFZQ_script)()
+local function ZIRKTER_script() -- R6.LocalScript 
 	local script = Instance.new('LocalScript', R6)
 
 	local TweenService = game:GetService("TweenService")
@@ -726,8 +726,8 @@ local function ZYQEQSG_script() -- R6.LocalScript
 		leaveTween:Play()
 	end)
 end
-coroutine.wrap(ZYQEQSG_script)()
-local function ENATA_script() -- Execute.LocalScript 
+coroutine.wrap(ZIRKTER_script)()
+local function WQVCYH_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local replicatedStorage = game:GetService("ReplicatedStorage")
@@ -754,8 +754,8 @@ local function ENATA_script() -- Execute.LocalScript
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(ENATA_script)()
-local function TGRYTYR_script() -- Clear.ClearTextBoxOnClick 
+coroutine.wrap(WQVCYH_script)()
+local function TOJKQ_script() -- Clear.ClearTextBoxOnClick 
 	local script = Instance.new('LocalScript', Clear)
 
 	local clearButton = script.Parent
@@ -769,8 +769,8 @@ local function TGRYTYR_script() -- Clear.ClearTextBoxOnClick
 	
 	
 end
-coroutine.wrap(TGRYTYR_script)()
-local function MKCUBXA_script() -- SSFRAME.UIDrag 
+coroutine.wrap(TOJKQ_script)()
+local function CAQCYFR_script() -- SSFRAME.UIDrag 
 	local script = Instance.new('LocalScript', SSFRAME)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -811,8 +811,8 @@ local function MKCUBXA_script() -- SSFRAME.UIDrag
 		end
 	end)
 end
-coroutine.wrap(MKCUBXA_script)()
-local function LWJMFIK_script() -- TextBox_3.SyntaxHighlighter 
+coroutine.wrap(CAQCYFR_script)()
+local function CCQEMX_script() -- TextBox_3.SyntaxHighlighter 
 	local script = Instance.new('LocalScript', TextBox_3)
 
 	local textBox = script.Parent
@@ -859,8 +859,8 @@ local function LWJMFIK_script() -- TextBox_3.SyntaxHighlighter
 	highlightSyntax()
 	
 end
-coroutine.wrap(LWJMFIK_script)()
-local function SIUAWVO_script() -- Scan.LocalScript 
+coroutine.wrap(CCQEMX_script)()
+local function EJXKB_script() -- Scan.LocalScript 
 	local script = Instance.new('LocalScript', Scan)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -893,8 +893,8 @@ local function SIUAWVO_script() -- Scan.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SIUAWVO_script)()
-local function IFUM_script() -- ScreenGui.ToggleFrameVisibility 
+coroutine.wrap(EJXKB_script)()
+local function DZBDC_script() -- ScreenGui.ToggleFrameVisibility 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -913,4 +913,4 @@ local function IFUM_script() -- ScreenGui.ToggleFrameVisibility
 	
 	
 end
-coroutine.wrap(IFUM_script)()
+coroutine.wrap(DZBDC_script)()
